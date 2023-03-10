@@ -1,1 +1,1 @@
-# Repository with python scpripts for "Inzheneere preparation"
+# Repository with python scpripts for "Inzheneerochka"
