@@ -14,7 +14,7 @@ try:
         try:
             num = int(num)
             if 0 <= num <= 255:
-                GPIO.output(dac, funcs.Dec2Bin(num))
+                GPIO.output(dac, funcs.dec2bin(num))
                 voltage = float(num) / 256.0 * 3.3
                 print(f"Output voltage is about {voltage:.4} volt")
             else:
@@ -22,7 +22,7 @@ try:
                     print("Number have to be >=0! Try again...")
                 elif num > 255:
                     print("Number is out of range [0,255]! Try again...")  
-        except:
+        except Exception:
             if num == "q": break
             print("You have to type a number, not string! Try again...")
 
